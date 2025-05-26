@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Modify Color",
+    "version": "1.0",
+    "description": "Modify the color of the current tab",
+    "action":{
+        "default_popup": "popup.html",
+        "default_icon": "icons/icon.png"
+    },
+    "permissions": ["scripting", "activeTab"] 
+}
+
+
