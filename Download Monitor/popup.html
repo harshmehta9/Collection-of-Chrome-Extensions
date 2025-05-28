@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Monitor</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>📥 Download Monitor</h2>
+            <div class="controls">
+                <button id="clearBtn" class="btn btn-danger">Clear History</button>
+                <button id="exportBtn" class="btn btn-primary">Export Data</button>
+            </div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Total Downloads:</span>
+                <span id="totalDownloads" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Today:</span>
+                <span id="todayDownloads" class="stat-value">0</span>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search downloads..." class="search-input">
+        </div>
+
+        <div class="downloads-container">
+            <div id="downloadsList" class="downloads-list">
+                <!-- Downloads will be populated here -->
+            </div>
+            <div id="noDownloads" class="no-downloads" style="display: none;">
+                <p>No downloads found</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
